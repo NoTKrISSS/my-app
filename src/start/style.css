@@ -1,0 +1,14 @@
+.pink {
+  color: pink;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid pink;
+  border-radius: 7px;
+}
+.goth {
+  color: black;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
