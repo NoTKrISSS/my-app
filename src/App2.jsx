@@ -17,7 +17,7 @@ const data2 = [
   },
 ];
 
-function App2() {
+function App() {
   return (
     <>
       {data2.map((apskritimas, index) => (
@@ -27,6 +27,6 @@ function App2() {
   );
 }
 
-export default App2;
+export default App;
 
 //Sukurti reacto aplikaciją kuri nupaišytų aštuonis skirtingų spalvų apskritimus, duomenis imant iš masyvo su aštuoniais hex spalvų kodais.
