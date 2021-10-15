@@ -1,10 +1,10 @@
-function Apskritimai({ boxColor }) {
+function Apskritimai({ apskritimasColor }) {
   return (
     <>
       <div
         className="apskritimai"
         style={{
-          background: boxColor,
+          background: apskritimasColor,
         }}
       ></div>
     </>

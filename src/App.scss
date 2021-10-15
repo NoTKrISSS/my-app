@@ -16,7 +16,6 @@
   border-radius: 50%;
   border: solid 1px;
   width: 200px;
-  width: 200px;
   height: 200px;
   background: black;
   display: flex;
@@ -24,6 +23,7 @@
   align-items: center;
   margin: 3px;
   padding: 5px;
+  position: absolute;
 }
 
 .dezute {
@@ -59,4 +59,24 @@
     width: 100px;
     height: 60px;
   }
+}
+
+.mygtukas {
+  width: 200px;
+  height: 120px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  padding: 5px;
+  color: blue;
+}
+
+.container {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }

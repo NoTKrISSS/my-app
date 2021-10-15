@@ -4,16 +4,16 @@ import Apskritimai from "./Components/Apskritimai";
 
 const data2 = [
   {
-    boxColor: "green",
+    apskritimasColor: "green",
   },
   {
-    boxColor: "yellow",
+    apskritimasColor: "yellow",
   },
   {
-    boxColor: "white",
+    apskritimasColor: "white",
   },
   {
-    boxColor: "pink",
+    apskritimasColor: "pink",
   },
 ];
 
@@ -21,7 +21,10 @@ function App() {
   return (
     <>
       {data2.map((apskritimas, index) => (
-        <Apskritimai key={index} boxColor={apskritimas.boxColor} />
+        <Apskritimai
+          key={index}
+          apskritimasColor={apskritimas.apskritimasColor}
+        />
       ))}
     </>
   );
