@@ -80,3 +80,11 @@
   height: 100vh;
   position: relative;
 }
+
+.counter {
+  position: fixed;
+  height: 80px;
+  width: 300px;
+  border: solid 3px green;
+  margin-top: 20px;
+}
