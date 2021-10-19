@@ -1,62 +1,22 @@
-import { Component } from "react";
-import Baloons from "./Components/Baloons";
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0,
-    };
+import Input from "./Components/generator/ColorInput";
+import { useState } from "react";
+import Display from "./Components/generator/DisplayContent";
+function App() {
+  const [color, setColor] = useState("#fff");
+  const [number, setNumber] = useState(0);
+  const [shape, setShape] = useState();
+
+  function handleColor(props) {
+    console.log(props.target.value);
+    setColor(props.target.value);
   }
-  handlescore = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-  render() {
-    return (
-      <div className="container">
-        <div>{this.state.count}</div>
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-        <Baloons handlescore={this.handlescore} />
-      </div>
-    );
-  }
+
+  return (
+    <div className="container3">
+      <Input handleColor={handleColor}></Input>
+      {color && <Display color={color}></Display>}
+    </div>
+  );
 }
 
 export default App;
